@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* For modern browsers */
+.hide-scrollbar {
+    overflow-x: auto;  /* Allows horizontal scroll */
+    scrollbar-width: none;  /* Hides scrollbar in Firefox */
+  }
+  
+  .hide-scrollbar ::-webkit-scrollbar {
+    display: none;  /* Hides scrollbar in Chrome, Safari, and Edge */
+  }
+  

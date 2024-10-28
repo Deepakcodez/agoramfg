@@ -1,4 +1,3 @@
-import { PaddingWrapper } from "@/components";
 import { logo } from "@/constants/imagePath";
 import { cn } from "@/utils";
 import { Link, useLocation } from "react-router-dom";
@@ -30,37 +29,37 @@ const Navbar = () => {
   ];
 
   return (
-    <PaddingWrapper>
-      <div className="px-24 fixed w-full flex items-center justify-between backdrop-blur-sm">
-        {/* Logo */}
-        <Link to="/">
-          <img src={logo} alt="Agora" />
-        </Link>
 
-        {/* Navlinks */}
-        <ul className="flex gap-8">
-          {navlinks.map((navlink, index) => (
-            <li key={`NAVLINKS_${index}`}>
-              <Link
-                to={navlink.link}
-                className={cn("text-white", {
-                  "border-b-2 border-A-red": location.pathname.includes(navlink.link)
-                })}
-              >
-                {navlink.title}
-              </Link>
-            </li>
-          ))}
-        </ul>
+    <div className="md:px-24 px-12 fixed w-full flex items-center justify-between backdrop-blur-[3px]">
+      {/* Logo */}
+      <Link to="/">
+        <img src={logo} alt="Agora" />
+      </Link>
 
-        {/* Contact Button */}
-        <Link to="/contact">
-          <button className="bg-A-red text-white px-8 py-1 rounded-md font-semibold border border-red-400">
-            Contact
-          </button>
-        </Link>
-      </div>
-    </PaddingWrapper>
+      {/* Navlinks */}
+      <ul className="flex gap-8">
+        {navlinks.map((navlink, index) => (
+          <li key={`NAVLINKS_${index}`}>
+            <Link
+              to={navlink.link}
+              className={cn("text-white", {
+                "border-b-2 border-A-red": location.pathname.includes(navlink.link)
+              })}
+            >
+              {navlink.title}
+            </Link>
+          </li>
+        ))}
+      </ul>
+
+      {/* Contact Button */}
+      <Link to="/contact">
+        <button className="bg-A-red text-white px-8 py-1 rounded-md font-semibold border border-red-400">
+          Contact
+        </button>
+      </Link>
+    </div>
+
   );
 };
 

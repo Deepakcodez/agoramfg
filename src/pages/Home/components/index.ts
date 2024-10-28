@@ -1,6 +1,5 @@
 import LandingPage from "./LandingPage";
+import Testinomial from "./Testinomial";
+import Footer from "./Footer";
 
-
-export{
-    LandingPage,
-}
+export { LandingPage, Testinomial, Footer };
