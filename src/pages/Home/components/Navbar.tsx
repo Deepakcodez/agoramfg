@@ -31,7 +31,7 @@ const Navbar = () => {
 
   return (
     <PaddingWrapper>
-      <div className="px-24 fixed w-full flex items-center justify-between backdrop-blur-sm">
+      <div className="fixed flex justify-between items-center backdrop-blur-sm px-24 w-full">
         {/* Logo */}
         <Link to="/">
           <img src={logo} alt="Agora" />
@@ -55,7 +55,7 @@ const Navbar = () => {
 
         {/* Contact Button */}
         <Link to="/contact">
-          <button className="bg-A-red text-white px-8 py-1 rounded-md font-semibold border border-red-400">
+          <button className="bg-A-red px-8 py-1 border border-red-400 rounded-md font-semibold text-white">
             Contact
           </button>
         </Link>
