@@ -12,10 +12,10 @@ const Navbar: React.FC = () => {
 
   return (
 
-    <div className="fixed z-50 flex justify-between items-center backdrop-blur-[3px] px-12 md:px-24 w-full bg-white">
+    <div className="fixed z-50 flex justify-between items-center backdrop-blur-[3px] px-12 md:px-24 w-full bg-white py-2">
       {/* Logo */}
       <Link to="/">
-        <img src={logo} alt="Agora" className="h-16" />
+        <img src={logo} alt="Agora" className="h-12" />
       </Link>
 
       {/* Navlinks */}

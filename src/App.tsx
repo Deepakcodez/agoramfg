@@ -4,11 +4,11 @@ import { Router } from './routes'
 function App() {
 
   return (
-    <>
-      
-        <Router />
-      
-    </>
+    <div className='hide-scrollbar'>
+
+      <Router />
+
+    </div>
   )
 }
 
