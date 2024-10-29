@@ -1,15 +1,12 @@
 import React from "react"
-import { LandingPage } from "./components"
-import About from "./components/about"
-
-
+import { Footer, LandingPage, Testinomial } from "./components"
 
 export const Home: React.FC = () => {
   return (
     <div className="w-full h-screen text-black">
       <LandingPage />
-      <About />
-     
+      <Testinomial />
+      <Footer />
     </div>
   )
 }

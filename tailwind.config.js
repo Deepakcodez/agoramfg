@@ -25,6 +25,7 @@ export default {
       },
       colors: {
         "A-red": "#ee3a43",
+        "A-blue": "#053990"
         
       },
     },
