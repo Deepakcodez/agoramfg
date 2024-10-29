@@ -1,32 +1,14 @@
 import { logo } from "@/constants/imagePath";
+import { navlinks } from "@/data";
+import { NavlinksTypes } from "@/types";
 import { cn } from "@/utils";
+import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
-const Navbar = () => {
+
+const Navbar: React.FC = () => {
   const location = useLocation();
 
-  const navlinks = [
-    {
-      title: "Home",
-      link: "/"
-    },
-    {
-      title: "About Us",
-      link: "/about"
-    },
-    {
-      title: "Products",
-      link: "/products"
-    },
-    {
-      title: "Capabilities",
-      link: "/capabilities"
-    },
-    {
-      title: "Careers",
-      link: "/careers"
-    }
-  ];
 
   return (
 
@@ -38,12 +20,12 @@ const Navbar = () => {
 
       {/* Navlinks */}
       <ul className="flex gap-8">
-        {navlinks.map((navlink, index) => (
+        {navlinks.map((navlink: NavlinksTypes, index: number) => (
           <li key={`NAVLINKS_${index}`}>
             <Link
               to={navlink.link}
               className={cn("text-white", {
-                "border-b-2 border-A-red": location.pathname.includes(navlink.link)
+                "border-b-2 border-A-red": location.pathname === navlink.link
               })}
             >
               {navlink.title}

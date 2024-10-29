@@ -1,7 +1,5 @@
 import React from "react"
-import { Footer, LandingPage, Testinomial } from "./components"
-import About from "./components/About";
-
+import {Footer, LandingPage, Testinomial } from "./components"
 
 export const Home: React.FC = () => {
   return (
@@ -10,6 +8,7 @@ export const Home: React.FC = () => {
       <About />
       <Testinomial />
       <Footer />
+
     </div>
   )
 }
