@@ -6,9 +6,10 @@ import { Outlet } from "react-router-dom"
 const ClientLayout: React.FC = () => {
 
     return (
-        <div className="  h-screen  bg-white">
-            <Navbar/>
+        <div className="  min-h-auto       bg-white">
+            <Navbar />
             <Outlet />
+
         </div>
 
 

@@ -1,32 +1,12 @@
 import { FooterLogos } from "@/constants/imagePath"
+import { navlinks } from "@/data";
 import React from "react"
 import { Link } from "react-router-dom";
 
 const Footer: React.FC = () => {
-    const navlinks = [
-        {
-            title: "Home",
-            link: "/"
-        },
-        {
-            title: "About Us",
-            link: "/about"
-        },
-        {
-            title: "Products",
-            link: "/products"
-        },
-        {
-            title: "Capabilities",
-            link: "/capabilities"
-        },
-        {
-            title: "Careers",
-            link: "/careers"
-        }
-    ];
+
     return (
-        <div className="bg-A-blue py-12 flex flex-col justify-center items-center  md:rounded-t-2xl rounded-t-md">
+        <div className= " bg-A-blue py-12 flex flex-col justify-center items-center  md:rounded-t-2xl rounded-t-md ">
             <div className="flex flex-wrap justify-center md:gap-8 gap-4  md:w-8/12 w-full mb-4 py-4 text-wrap">
                 {
                     navlinks.map((links, i) =>

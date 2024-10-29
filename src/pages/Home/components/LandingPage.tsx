@@ -12,7 +12,7 @@ const LandingPage: React.FC = () => {
                 className="h-full w-full">
                 
                 <div className="w-7/12 flex flex-col justify-center h-full md:px-24 px-12">
-                    <div className="text-white text-[8vw] leading-[7rem] font-semibold ">
+                    <div className="text-white text-[6vw] leading-[7rem] font-semibold ">
                         <h1>YOU'LL FIND</h1>
                         <h1>WE'RE A</h1>
                         <h1>PERFECT FIT</h1>
