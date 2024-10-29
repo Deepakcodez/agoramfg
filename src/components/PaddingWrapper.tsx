@@ -1,12 +1,14 @@
+import { cn } from "@/utils"
 import React from "react"
 
 
 interface PaddingWrapperProps {
-    children: React.ReactNode
+    children: React.ReactNode;
+    className? : string;
 }
-const PaddingWrapper: React.FC<PaddingWrapperProps> = ({ children }) => {
+const PaddingWrapper: React.FC<PaddingWrapperProps> = ({ children , className}) => {
     return (
-        <div className="px-4 md:px-24">
+        <div className={cn("px-4 md:px-24",className)}>
             {children}
         </div>
     )
