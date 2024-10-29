@@ -76,31 +76,8 @@ const AboutUs = () => {
             </p>
           </div>
         </div>
-        {/* Section 4 */}
-        <div className="items-center gap-8 grid md:grid-cols-2 mb-12">
-          {/* Text section 4 */}
-          <div>
-            <h2 className="font-semibold text-2xl text-blue-700"></h2>
-            <p className="mt-4 text-gray-700">
-              Recently, we were given the opportunity to partner with the only
-              load bank manufacturer in Ontario. We welcomed the challenge and
-              worked hand in hand with our new customer, starting from the
-              conceptual design to installation.
-            </p>
-            <p className="mt-4 text-gray-700">
-              Six months later, we are proud to announce that we have
-              successfully completed our third load bank of the year. The load
-              banks will be used for load testing and battery backup systems for
-              hospitals and large data centers, etc. Please view a few pictures
-              below and more on our products page.
-            </p>
-          </div>
-          <img
-            src="https://via.placeholder.com/400x300"
-            alt="image"
-            className="rounded-lg w-full h-full object-cover"
-          />
-        </div>
+        
+        
       </div>
     </div>
   );
