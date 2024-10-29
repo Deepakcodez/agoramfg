@@ -19,10 +19,7 @@ const CLIENT_ROUTES: RoutDocument[] = [
     href: "",
     page: Home,
   },
-<<<<<<< HEAD
  
-=======
->>>>>>> main
   {
     href: "/about-us",
     page: AboutUs,

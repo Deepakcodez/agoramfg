@@ -1,69 +1,45 @@
-
-import { landingImage } from '@/constants/imagePath';
-import { PaddingWrapper } from '@/components';
 import { MenWorking } from '@/constants/imagePath';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 const About: React.FC = () => {
   return (
-    <div className="flex md:flex-row flex-col items-center bg-white shadow-lg mx-auto mt-[10%] p-8 rounded-lg max-w-4xl">
-      {/* Image Section */}
-        <img
-          src={landingImage}
-          alt="Image"
-          className="rounded-lg w-[80vw] h-[50vh]"
-        />
+  
+
+    <div className="flex md:flex-row flex-col mx-auto mt-[10%] p-8 rounded-lg h-auto">
+      <div className="top-0 sticky md:w-1/2 h-[32rem]">
+        <div className="h-[300px] md:h-full overflow-hidden">
+          <img
+            src={MenWorking}
+            alt="Men working"
+            className="rounded-lg w-full h-full object-cover"
+          />
+        </div>
       </div>
 
-      {/* Text Section */}
+      {/* Detailed Text Section */}
       <div className="mt-6 md:mt-0 md:pl-8 md:w-1/2 text-left">
-        <h2 className="font-semibold text-3xl text-gray-800">You’re in good hands</h2>
+        <h2 className="font-semibold text-3xl text-gray-800">About Agora Manufacturing</h2>
+
         <p className="mt-4 text-gray-600 leading-relaxed">
-       Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi iste numquam enim alias nulla recusandae cupiditate omnis
-        natus, qui saepe repellendus dolor aperiam facere iure! Laboriosam quasi saepe quisquam praesentium? Velit possimus saepe iusto eos consequatur, id eaque a.
+          Agora Manufacturing has been a trusted steel fabricator and producer of high-quality electrical enclosures since 1982. Serving a wide range of industries, including electrical and electronic, nuclear, marine, and entertainment, Agora’s expertise extends to creating custom solutions for diverse applications. Their extensive portfolio showcases projects such as control cabinets, large transformer housings, racks, consoles, multi-door enclosures, and switch gears, reflecting their capability to handle projects of any scale with precision.
         </p>
-        <button className="bg-black hover:bg-gray-800 mt-6 px-6 py-2 rounded text-white transition duration-300">
-          Learn more &rarr;
-        </button>
-    <PaddingWrapper className='relative'>
-      <div className="flex md:flex-row flex-col mx-auto mt-[10%] p-8 rounded-lg h-[160vh]">
-        <div className="top-[6rem] sticky md:w-1/2 h-[32rem]">
-          <div className="h-[300px] md:h-full overflow-hidden">
-            <img
-              src={MenWorking}
-              alt="Image"
-              className="rounded-lg w-full h-full object-cover"
-            />
-          </div>
-        </div>
+        <p className="mt-4 text-gray-600 leading-relaxed">
+          Dedicated to meeting all material requirements, Agora works with an array of metals, including carbon steel, galvanized steel, stainless steel, and aluminum. This material versatility allows them to tailor solutions to specific needs, ensuring that every product meets both the functional and aesthetic standards of each industry they serve.
+        </p>
+        <p className="mt-4 text-gray-600 leading-relaxed">
+          At Agora, customers are the highest priority. The company prides itself on its highly skilled technical team, renowned for delivering precision and exceptional service. With a commitment to the highest quality standards, Agora offers flexibility, reliability, and a customer-centered approach that drives their passion for excellence. They find joy in their work, aiming to produce outstanding quality with every project they undertake.
+        </p>
 
-        {/* Text Section */}
-        <div className="mt-6 md:mt-0 md:pl-8 md:w-1/2 text-left">
-          <h2 className="font-semibold text-3xl text-gray-800">You're in good hands</h2>
-
-          {/* Initially Visible Text */}
-          <p className="mt-4 text-gray-600 leading-relaxed">
-            Agora Manufacturing has been a trusted steel fabricator and producer of high-quality electrical enclosures since 1982. Serving a wide range of industries, including electrical and electronic, nuclear, marine, and entertainment, Agora’s expertise extends to creating custom solutions for diverse applications. Their extensive portfolio showcases projects such as control cabinets, large transformer housings, racks, consoles, multi-door enclosures, and switch gears, reflecting their capability to handle projects of any scale with precision.
-          </p>
-          <p className="mt-4 text-gray-600 leading-relaxed">
-            Dedicated to meeting all material requirements, Agora works with an array of metals, including carbon steel, galvanized steel, stainless steel, and aluminum. This material versatility allows them to tailor solutions to specific needs, ensuring that every product meets both the functional and aesthetic standards of each industry they serve.
-          </p>
-          <p className="mt-4 text-gray-600 leading-relaxed">
-            At Agora, customers are the highest priority. The company prides itself on its highly skilled technical team, renowned for delivering precision and exceptional service. With a commitment to the highest quality standards, Agora offers flexibility, reliability, and a customer-centered approach that drives their passion for excellence. They find joy in their work, aiming to produce outstanding quality with every project they undertake.
-          </p>
-
-
-
-          <Link to={'/about-us'}>
-            <button className="bg-A-blue hover:bg-A-blue/90 mt-6 px-6 py-2 rounded text-white transition duration-300">
-              Learn more &rarr;
-            </button>
-          </Link>
-
-        </div>
+        <Link to={'/about-us'}>
+          <button className="bg-A-blue hover:bg-A-blue/90 mt-6 px-6 py-2 rounded text-white transition duration-300">
+            Learn more &rarr;
+          </button>
+        </Link>
       </div>
-    </PaddingWrapper>
+    </div>
+    
+  );
 };
 
-export default About
+export default About;
