@@ -2,10 +2,10 @@ const AboutUs = () => {
   return (
     <div className="bg-gray-100 p-8">
       <div className="mx-auto mt-20 max-w-6xl">
-        {" "}
+       
         {/* Container for img text section */}
         <div className="items-center gap-8 grid md:grid-cols-2 mb-12">
-          {" "}
+         
           {/* Section 1 */}
           {/* Image section 1 */}
           <img
@@ -14,7 +14,7 @@ const AboutUs = () => {
             className="rounded-lg w-full h-full object-cover"
           />
           <div>
-            {" "}
+            
             {/* Text section 1 */}
             <h2 className="font-semibold text-2xl text-blue-700"></h2>
             <p className="mt-4 text-gray-700">
@@ -35,7 +35,7 @@ const AboutUs = () => {
         {/* Section 2 */}
         <div className="items-center gap-8 grid md:grid-cols-2 mb-12">
           <div>
-            {" "}
+          
             {/* Text section 2 */}
             <h2 className="font-semibold text-2xl text-blue-700"></h2>
             <p className="mt-4 text-gray-700">
@@ -51,7 +51,7 @@ const AboutUs = () => {
             src="https://via.placeholder.com/400x300"
             alt="image"
             className="rounded-lg w-full h-full object-cover"
-          />{" "}
+          />
           {/* Image section 2 */}
         </div>
         {/* Section 3 */}
