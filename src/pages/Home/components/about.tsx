@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const About: React.FC = () => {
   return (
     <PaddingWrapper className='relative '>
-      <div className=" flex md:flex-row flex-col   mx-auto mt-[10%] p-8 rounded-lg h-[200vh] ">
+      <div className=" flex md:flex-row flex-col   mx-auto mt-[10%] p-8 rounded-lg h-[160vh] ">
         {/* Image Section */}
         <div className="md:w-1/2 sticky top-[6rem] h-[32rem]">
           <div className="h-[300px] md:h-full overflow-hidden">
