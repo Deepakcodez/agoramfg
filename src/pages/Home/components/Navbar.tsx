@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
 
   return (
 
-    <div className="md:px-24 px-12 fixed w-full flex items-center justify-between backdrop-blur-[3px]">
+    <div className="fixed z-50 flex justify-between items-center backdrop-blur-[3px] px-12 md:px-24 w-full">
       {/* Logo */}
       <Link to="/">
         <img src={logo} alt="Agora" />
@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
 
       {/* Contact Button */}
       <Link to="/contact">
-        <button className="bg-A-red text-white px-8 py-1 rounded-md font-semibold border border-red-400">
+        <button className="bg-A-red px-8 py-1 border border-red-400 rounded-md font-semibold text-white">
           Contact
         </button>
       </Link>
