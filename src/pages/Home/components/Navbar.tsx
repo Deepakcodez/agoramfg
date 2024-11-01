@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
 
   return (
 
-    <div className="fixed z-50 flex justify-between items-center backdrop-blur-[3px] px-12 md:px-24 w-full bg-white">
+    <div className="z-50 fixed flex justify-between items-center bg-white backdrop-blur-[3px] px-12 md:px-24 w-full">
       {/* Logo */}
       <Link to="/">
         <img src={logo} alt="Agora" className="h-16" />
