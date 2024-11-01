@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
-    <div className="z-50 fixed flex justify-between items-center bg-white backdrop-blur-[3px] px-8 md:px-24 w-full">
+
 
     <div className="z-50 fixed flex justify-between items-center bg-white backdrop-blur-[3px] px-12 md:px-24 py-2 w-full">
       {/* Logo */}
