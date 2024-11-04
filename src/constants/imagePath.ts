@@ -2,6 +2,8 @@ import landingImage from "/public/assests/images/landing.png";
 import logo from "/public/assests/images/logo.png";
 import FooterLogos from "/public/assests/images/footerLogos.webp";
 import MenWorking from "/public/assests/images/cutting.jpg";
+import officeimg from "/public/assests/images/officeimg.jpg";
+
 
 import product11 from "/public/assests/images/products/11.jpg";
 import product13 from "/public/assests/images/products/13.jpg";
@@ -82,6 +84,7 @@ export {
   logo,
   FooterLogos,
   MenWorking,
+  officeimg,
   product11,
   product13,
   product18,
