@@ -3,7 +3,7 @@ import { officeimg } from "@/constants/imagePath";
 const Contact = () => {
   return (
     <div className="flex justify-center min-h-screen">
-      <div className="bg-white shadow-lg rounded-lg w-full h-[5rem]">
+      <div className="bg-white shadow-lg mt-20 px-4 lg:px-24 rounded-lg w-full h-[5rem]">
         
         {/* Top Image */}
         <img
