@@ -3,7 +3,7 @@
 
 const ContactInfo = () => {
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 text-sm">
       <h3 className="font-semibold text-gray-800 text-xl">Contact Information</h3>
       <p className="text-gray-600">Reach out for any queries or quotes. We’re here to help you!</p>
       <p className="font-medium text-gray-800">📞 Phone: (905) 362-1700</p>

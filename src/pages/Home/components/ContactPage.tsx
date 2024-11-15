@@ -5,22 +5,19 @@ import  ContactMap  from '@pages/contact/components/ContactMap'
 
 const ContactPage = () => {
   return (
-    <div className="flex justify-center min-h-screen">
-      <div className="bg-white shadow-lg px-4 lg:px-24 rounded-lg w-full h-[5rem]">
+    <div className="flex justify-center  h-auto">
+      <div className="bg-white shadow-lg px-4 lg:px-24 rounded-lg w-full ">
         
         {/* Top Image */}
         <img
           src={officeimg}
           alt="Office"
-          className="mt-28 rounded-t-lg w-full"
+          className="mt-28 rounded-t-lg w-full "
         />
         
-        <div className="p-8 md:p-12">
-          {/* Header */}
-          <h2 className="mb-6 font-bold text-3xl text-center text-gray-800">
-            CONTACT US
-          </h2>
-
+        <div className="py-8 md:py-12">
+      
+          
           {/* Main Content Container */}
           <div className="flex lg:flex-row flex-col lg:space-x-8">
 
