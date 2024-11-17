@@ -1,6 +1,14 @@
-const Capabilities = () => {
+
+import { Footer } from "../Home/components"
+import Capibility from "../Home/components/Capibility"
+
+
+const Contact = () => {
   return (
-    <div>Capabilities</div>
+    <>
+      <Capibility />
+      <Footer />
+    </>
   )
 }
-export default Capabilities
+export default Contact
