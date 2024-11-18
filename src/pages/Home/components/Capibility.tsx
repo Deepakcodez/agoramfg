@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 const Design = () => {
   return (
@@ -20,23 +20,29 @@ const Design = () => {
         </div>
 
         {/* Sidebar with Quick Links and Contact Us */}
-        <div className="w-full lg:w-64 bg-gray-100 p-6 rounded-lg shadow-lg">
+        <div className="w-full lg:w-64 bg-gray-100 text-center p-6 rounded-lg shadow-lg">
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">Quick Links</h2>
           <ul className="space-y-4 mb-8">
-            <li>
-              <a href="#form" className="text-lg text-gray-700 hover:text-blue-600">Form</a>
+          <li>
+              <a href="#design" className="text-lg text-gray-700 hover:bg-red-500 hover:text-white px-2 py-1">Design</a>
             </li>
             <li>
-              <a href="#weld" className="text-lg text-gray-700 hover:text-blue-600">Weld</a>
+              <a href="#laser" className="text-lg text-gray-700 hover:bg-red-500 hover:text-white px-2 py-1">Laser</a>
             </li>
             <li>
-              <a href="#paint" className="text-lg text-gray-700 hover:text-blue-600">Paint</a>
+              <a href="#form" className="text-lg text-gray-700 hover:bg-red-500 hover:text-white px-2 py-1">Form</a>
             </li>
             <li>
-              <a href="#ship" className="text-lg text-gray-700 hover:text-blue-600">Ship</a>
+              <a href="#weld" className="text-lg text-gray-700 hover:bg-red-500  hover:text-white px-2 py-1">Weld</a>
             </li>
             <li>
-              <a href="#assembly" className="text-lg text-gray-700 hover:text-blue-600">Assembly</a>
+              <a href="#paint" className="text-lg text-gray-700 hover:bg-red-500 hover:text-white  px-2 py-1">Paint</a>
+            </li>
+            <li>
+              <a href="#ship" className="text-lg text-gray-700 hover:bg-red-500 px-2 hover:text-white py-1">Ship</a>
+            </li>
+            <li>
+              <a href="#assembly" className="text-lg text-gray-700 hover:bg-red-500 hover:text-white px-2 py-1">Assembly</a>
             </li>
           </ul>
 
