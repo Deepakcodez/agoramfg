@@ -40,7 +40,7 @@ const Navbar: React.FC = () => {
 
         {/* Contact Button */}
         <Link to="/contact" className="">
-          <button className="bg-A-red px-4 py-1 border border-red-400 rounded-md font-semibold text-white text-sm">
+          <button className="bg-A-red shadow-lg shadow-A-red/50 px-4 py-1 border border-red-400 rounded-md font-semibold text-white text-sm">
             Contact
           </button>
         </Link>
