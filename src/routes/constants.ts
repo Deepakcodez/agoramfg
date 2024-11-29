@@ -1,6 +1,5 @@
 import {
   AboutUs,
-  Capabilities,
   Career,
   Contact,
   Home,
