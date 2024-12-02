@@ -1,4 +1,3 @@
-import Capabilities from "./Capabilities";
 import Capabilitylayout from "./Capabilitylayout";
 import Assembly from "./components/Assembly";
 import Design from "./components/Design";
@@ -9,7 +8,6 @@ import Ship from "./components/Ship";
 import Weld from "./components/Weld";
 
 export {
-    Capabilities, 
     Capabilitylayout,
     Assembly,
     Design,
