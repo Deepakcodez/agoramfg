@@ -1,4 +1,5 @@
 import Capablitycontent from "./Capablitycontent"
+
 import assablyImage from '/public/assests/images/products/100.jpg'
 const Assembly = () => {
     return (

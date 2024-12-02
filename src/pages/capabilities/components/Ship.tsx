@@ -4,13 +4,14 @@ import assablyImage from '/public/assests/images/products/100.jpg'
 const Ship = () => {
   return (
     <Capablitycontent
-    image={assablyImage}
-    buttonText="Ship"
-    cont1="We, at Agora, maintain the highest quality assembly."
-    cont2="You can expect all of our enclosures to come fully assembled and ready to go.  "
-    cont3="We do all of the assembly necessary of non-electrical items to minimize work for you!"
-    cont4="We work with the customer to facilitate final assembly. We manufacture (or if required source) and install items including folding shelves, door closures, U plates and ground bars."
-/>
+      image={assablyImage}
+      buttonText="Ship"
+      cont1="Need something shipped? With Agora, it’s easy."
+      cont2="We offer flexible delivery options to meet your needs. Whether it’s using our own trucks, customer trucks and accounts, or third-party shipping services, we’ve got you covered."
+      cont3="Our trusted network of trucking partners enables us to efficiently ship across Canada, as well as to the US and Mexico, ensuring your materials arrive when and where you need them."
+      
+    />
   )
 }
-export default Ship
+
+export default Ship;
