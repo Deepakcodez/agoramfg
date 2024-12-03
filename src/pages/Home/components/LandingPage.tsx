@@ -12,7 +12,7 @@ const LandingPage: React.FC = () => {
                 className="h-full w-full bg-cover bg-center sm:bg-[top] md:bg-[center]"
             >
                 {/* Dark Overlay */}
-                <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+                <div className="absolute inset-0 bg-black bg-opacity-40"/>
 
                 {/* Text Section */}
                 <div className="absolute inset-0 flex flex-col justify-center items-center md:items-start px-6 sm:px-8 md:px-16 lg:px-24 text-white">
@@ -23,7 +23,7 @@ const LandingPage: React.FC = () => {
                         <br />
                         PERFECT FIT
                     </h1>
-                    <p className="mt-4 text-center md:text-left text-sm sm:text-base md:text-lg max-w-md">
+                    <p className="mt-4 text-center md:text-left text-xs sm:text-base md:text-lg max-w-md">
                         Solution to your custom electrical cabinets & enclosures needs
                     </p>
                 </div>

@@ -11,6 +11,7 @@ interface CapabilitylayoutProps {
     cont4?: string;
     cont5?: string;
     cont6?: string;
+    cont4style?:string;
 
 }
 const Capablitycontent: React.FC<CapabilitylayoutProps> = ({
@@ -20,11 +21,12 @@ const Capablitycontent: React.FC<CapabilitylayoutProps> = ({
     cont2,
     cont3,
     cont4,
+    cont4style
 }) => {
     return (
-        <div className="grid grid-cols-12 ">
-            <div className="col-span-6">
-                <div className="h-[70%] aspect-square rounded-lg relative overflow-hidden group">
+        <div className="grid grid-cols-12  pt-14 ">
+            <div className="md:col-span-6 col-span-12">
+                <div className="md:h-[30vw] h-[70vw] mx-auto md:mx-0 aspect-square rounded-lg relative overflow-hidden group">
                     <div
                         style={{
                             backgroundImage: `url(${image})`,
@@ -36,9 +38,9 @@ const Capablitycontent: React.FC<CapabilitylayoutProps> = ({
                 </div>
 
             </div>
-            <div className="col-span-6">
+            <div className="md:col-span-6 col-span-12 pt-12 md:pt-0">
                 <Button title={buttonText} />
-                <div className="my-8 flex flex-col gap-2">
+                <div className="my-8 flex flex-col gap-1 font-normal text-sm md:text-base ">
                     {
                         cont1 &&
                         <h1>{cont1}</h1>
@@ -54,7 +56,7 @@ const Capablitycontent: React.FC<CapabilitylayoutProps> = ({
                     {
                         cont4 &&
 
-                        <h1> {cont4}</h1>
+                        <h1 className={cont4style}> {cont4}</h1>
                     }
                 </div>
             </div>

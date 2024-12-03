@@ -9,10 +9,10 @@ const Capabilitylayout = () => {
     const navigate = useNavigate();
 
     React.useEffect(()=>{
-        if(pathname === '/capabilities'){
+        if(pathname === '/capabilities/'){
             navigate('/capabilities/assembly')
         }
-    },[])
+    },[pathname, navigate])
 
     return (
         <>

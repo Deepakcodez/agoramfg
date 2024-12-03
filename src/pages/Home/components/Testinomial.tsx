@@ -29,7 +29,7 @@ const Testinomial = () => {
 
                 {/* Testimonial Cards */}
                 <div
-                    className="mt-8 flex flex-col md:flex-row gap-6 md:gap-12 overflow-x-auto md:overflow-x-scroll hide-scrollbar"
+                    className="mt-8 flex flex-row gap-6 md:gap-12 overflow-x-auto md:overflow-x-scroll hide-scrollbar"
                     ref={scrollRef}
                 >
                     {[...Array(11)].map((_, index) => (

@@ -16,7 +16,7 @@ export const navlinks: NavlinksTypes[] = [
   },
   {
     title: "Capabilities",
-    link: "/capabilities",
+    link: "/capabilities/",
   },
   {
     title: "Careers",
