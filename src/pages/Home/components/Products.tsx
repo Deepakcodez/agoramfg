@@ -1,7 +1,6 @@
 import { product11, product13, product18, product19, product21, product22, product23, product24, product25, product26, product27, product28, product29, product31, product32, product33 } from "@/constants/imagePath";
 
 const Productspage = () => {
-
   const productImages = [
     { id: 1, src: product11, alt: "Product 1" },
     { id: 2, src: product13, alt: "Product 2" },
@@ -24,27 +23,26 @@ const Productspage = () => {
   return (
     <div className="bg-gray-50 min-h-screen flex flex-col">
       {/* Header Section */}
-
-      <header className="bg-blue-900 py-6 h-32 mt-10 flex items-center justify-center ">
+      <header className="bg-blue-900 py-6 h-32 mt-10 flex items-center justify-center">
         <h1 className="text-center text-4xl text-white font-bold">Products</h1>
       </header>
 
       {/* Main Content */}
-      <div className="flex flex-1 mt-8">
+      <div className="flex flex-1 flex-col sm:flex-row mt-8 items-center sm:items-start justify-center">
         {/* Sidebar */}
-        <aside className="w-1/5 bg-white shadow-md p-6">
+        <aside className="w-full sm:w-1/5 bg-white shadow-md p-6 mb-6 sm:mb-0 text-center sm:text-left">
           <h2 className="text-xl font-semibold text-blue-900 mb-4">Galleries</h2>
           <ul className="space-y-4">
-            <li className="cursor-pointer hover:text-blue-700 font-medium">Show All</li>
-            <li className="cursor-pointer hover:text-blue-700 font-medium">19" & 24" Racks</li>
-            <li className="cursor-pointer hover:text-blue-700 font-medium">Single Door Enclosures</li>
-            <li className="cursor-pointer hover:text-blue-700 font-medium">Multi Door Enclosures</li>
-            <li className="cursor-pointer hover:text-blue-700 font-medium">Large Housings</li>
-            <li className="cursor-pointer hover:text-blue-700 font-medium">Transformer Housings</li>
-            <li className="cursor-pointer hover:text-blue-700 font-medium">Control Consoles</li>
-            <li className="cursor-pointer hover:text-blue-700 font-medium">Misc. Parts</li>
-            <li className="cursor-pointer hover:text-blue-700 font-medium">Small Boxes & Wallmounts</li>
-            <li className="cursor-pointer hover:text-blue-700 font-medium">Load Banks</li>
+           
+            <li className="cursor-pointer hover:text-blue-700 ">19" & 24" Racks</li>
+            <li className="cursor-pointer hover:text-blue-700 ">Single Door Enclosures</li>
+            <li className="cursor-pointer hover:text-blue-700 ">Multi Door Enclosures</li>
+            <li className="cursor-pointer hover:text-blue-700 ">Large Housings</li>
+            <li className="cursor-pointer hover:text-blue-700 ">Transformer Housings</li>
+            <li className="cursor-pointer hover:text-blue-700 ">Control Consoles</li>
+            <li className="cursor-pointer hover:text-blue-700 ">Misc. Parts</li>
+            <li className="cursor-pointer hover:text-blue-700 ">Small Boxes & Wallmounts</li>
+            <li className="cursor-pointer hover:text-blue-700 ">Load Banks</li>
           </ul>
 
           <div className="mt-8 border-t pt-6">
@@ -53,10 +51,7 @@ const Productspage = () => {
             <p className="text-gray-700">F: (905)362-1370</p>
             <p className="text-gray-700 mb-4">
               E:{" "}
-              <a
-                href="mailto:agora@agoramfg.com"
-                className="text-blue-700 underline"
-              >
+              <a href="mailto:agora@agoramfg.com" className="text-blue-700 underline">
                 agora@agoramfg.com
               </a>
             </p>
@@ -68,8 +63,8 @@ const Productspage = () => {
         </aside>
 
         {/* Products Section */}
-        <main className="flex-1 bg-gray-50 p-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <main className="flex-1 bg-gray-50 p-4">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {/* Loop over the product images */}
             {productImages.map(({ id, src, alt }) => (
               <div
@@ -80,7 +75,7 @@ const Productspage = () => {
                 <img
                   src={src}
                   alt={alt}
-                  className="w-full h-40 object-cover"
+                  className="w-full h-auto max-h-40 object-cover"
                 />
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transform translate-y-full group-hover:translate-y-0 transition-all duration-300">
