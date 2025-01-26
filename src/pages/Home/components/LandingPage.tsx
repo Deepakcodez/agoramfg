@@ -1,34 +1,25 @@
 import React from "react";
-import { landingImage } from "@/constants/imagePath";
+import Title from "./hero/Title";
+import Tag from "./hero/Tag";
+import HeroRightSection from "./hero/RightSection";
 
 const LandingPage: React.FC = () => {
     return (
-        <div className="relative w-full h-screen">
-            {/* Responsive Background Image */}
-            <div
-                style={{
-                    backgroundImage: `url(${landingImage})`,
-                }}
-                className="h-full w-full bg-cover bg-center sm:bg-[top] md:bg-[center]"
-            >
-                {/* Dark Overlay */}
-                <div className="absolute inset-0 bg-black bg-opacity-40"/>
-
-                {/* Text Section */}
-                <div className="absolute inset-0 flex flex-col justify-center items-center md:items-start px-6 sm:px-8 md:px-16 lg:px-24 text-white">
-                    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-center md:text-left">
-                        YOU'LL FIND
-                        <br />
-                        WE'RE A
-                        <br />
-                        PERFECT FIT
-                    </h1>
-                    <p className="mt-4 text-center md:text-left text-xs sm:text-base md:text-lg max-w-md">
-                        Solution to your custom electrical cabinets & enclosures needs
-                    </p>
-                </div>
-            </div>
+        <div className=" md:h-[45rem]  grid grid-cols-12 relative  bg-red-5 pt-24 md:py-0">
+        {/* Left Section */}
+        <div className="md:col-span-6 col-span-12 flex flex-col gap-6 items-center md:items-start justify-center  px-4 sm:px-8 lg:px-16 xl:px-24 ">
+          
+          <Tag />
+          <Title />
         </div>
+  
+        {/* Right Section */}
+        <div className="md:col-span-6 col-span-12 mt-12 block overflow-hidden  ">
+          <div className="flex items-center justify-center    h-full w-full">
+            <HeroRightSection />
+          </div>
+        </div>
+      </div>
     );
 };
 

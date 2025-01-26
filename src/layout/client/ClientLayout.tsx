@@ -8,7 +8,7 @@ const ClientLayout: React.FC = () => {
 
 
     return (
-        <div className="  min-h-auto bg-white">
+        <div className="  bg-white">
             <div >
                 <Navbar />
             </div>

@@ -1,4 +1,4 @@
-import { FooterLogos } from "@/constants/imagePath"
+import { footerLogo } from "@/constants/imagePath";
 import { navlinks } from "@/data";
 import React from "react"
 import { Link } from "react-router-dom";
@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
                 }
             </div>
             <div className="h-[.6px] bg-gradient-to-r from-transparent    via-white to-transparent  w-8/12 mb-4 " />
-            <img src={FooterLogos} alt="" />
+            <img src={footerLogo} alt="" />
             <h1 className=" text-xs text-white/90 self-start md:ps-24 ps-4 mt-4">
                 Copyright 2014 Agora Manufactring
             </h1>

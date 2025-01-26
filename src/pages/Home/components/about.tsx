@@ -1,5 +1,5 @@
 import { PaddingWrapper } from '@/components';
-import { MenWorking } from '@/constants/imagePath';
+import { menWorking } from '@/constants/imagePath';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -11,7 +11,7 @@ const About: React.FC = () => {
         <div className="md:w-1/2 w-full md:sticky top-[6rem] md:h-[32rem] order-2 mt-12 md:mt-0">
           <div className="h-[300px] md:h-full overflow-hidden">
             <img
-              src={MenWorking}
+              src={menWorking}
               alt="Image"
               className="rounded-lg w-full h-full object-cover"
             />
