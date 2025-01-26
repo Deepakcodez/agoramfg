@@ -17,3 +17,22 @@
   ::-webkit-scrollbar {
     display: none;
 }
+
+/* styles.css or global CSS file */
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-50%);
+  }
+}
+
+.infinite-scroll {
+  display: flex;
+  animation: scroll 200s linear infinite; /* Adjust duration for speed */
+}
+
+.infinite-scroll:hover {
+  animation-play-state: paused; /* Pause on hover */
+}

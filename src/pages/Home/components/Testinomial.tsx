@@ -6,6 +6,11 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const Testinomial = () => {
     const scrollRef = useRef<HTMLDivElement>(null);
 
+    // Duplicate the cards to create an infinite loop
+    const cards = [...Array(11)]; // Original cards
+    const duplicatedCards = [...cards, ...cards]; // Duplicate the cards
+
+    // Manual scroll buttons
     const scrollLeft = () => {
         if (scrollRef.current) {
             scrollRef.current.scrollBy({ left: -500, behavior: "smooth" });
@@ -29,12 +34,29 @@ const Testinomial = () => {
 
                 {/* Testimonial Cards */}
                 <div
-                    className="mt-8 flex flex-row gap-6 md:gap-12 overflow-x-auto md:overflow-x-scroll hide-scrollbar"
+                    className="mt-8 flex flex-row gap-6 md:gap-12 overflow-x-hidden"
                     ref={scrollRef}
+                    style={{ overflow: "hidden" }}
                 >
-                    {[...Array(11)].map((_, index) => (
-                        <TestinomialCard key={index} />
-                    ))}
+                    <div
+                        className="flex flex-row gap-6 md:gap-12 infinite-scroll"
+                        onMouseEnter={() => {
+                            const container = scrollRef.current;
+                            if (container) {
+                                container.style.animationPlayState = "paused";
+                            }
+                        }}
+                        onMouseLeave={() => {
+                            const container = scrollRef.current;
+                            if (container) {
+                                container.style.animationPlayState = "running";
+                            }
+                        }}
+                    >
+                        {duplicatedCards.map((_, index) => (
+                            <TestinomialCard key={index} />
+                        ))}
+                    </div>
                 </div>
 
                 {/* Scroll Buttons */}

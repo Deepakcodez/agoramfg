@@ -32,7 +32,7 @@ const AnalyticSection: React.FC = () => {
         transition={{ duration: 0.5, delay: 0.2 }}
         className="flex flex-col items-center justify-center  p-6"
       >
-        <h1 className="text-6xl text-pink-500 font-bold">
+        <h1 className="text-6xl text-red-500 font-bold">
           {isInView && <CountUp end={20} duration={2} />}+
         </h1>
         <p className="text-gray-700  mt-2">Industry Experience</p>
@@ -45,7 +45,7 @@ const AnalyticSection: React.FC = () => {
         transition={{ duration: 0.5, delay: 0.4 }}
         className="flex flex-col items-center justify-center  p-6 "
       >
-        <h1 className="text-6xl text-green-500 font-bold">
+        <h1 className="text-6xl text-red-500 font-bold">
           {isInView && <CountUp end={10} duration={2} />}K+
         </h1>
         <p className="text-gray-700  mt-2">Happy Clients</p>
@@ -58,7 +58,7 @@ const AnalyticSection: React.FC = () => {
         transition={{ duration: 0.5, delay: 0.6 }}
         className="flex flex-col items-center justify-center  p-6"
       >
-        <h1 className="text-6xl text-purple-500 font-bold">
+        <h1 className="text-6xl text-red-500 font-bold">
           {isInView && <CountUp end={132} duration={2} />}+
         </h1>
         <p className="text-gray-700  mt-2">Awards Winner</p>
