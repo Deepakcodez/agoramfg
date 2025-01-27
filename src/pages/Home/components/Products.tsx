@@ -1,4 +1,4 @@
-import { product11, product13, product18, product19, product21, product22, product23, product24, product25, product26, product27, product28, product29, product31, product32, product33 } from "@/constants/imagePath";
+// import { product11, product13, product18, product19, product21, product22, product23, product24, product25, product26, product27, product28, product29, product31, product32, product33 } from "@/constants/imagePath";
 
 const Productspage = () => {
   const productImages = [
