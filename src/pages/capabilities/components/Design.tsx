@@ -1,6 +1,5 @@
 import Capablitycontent from "./Capablitycontent"
-
-import designImage from '/public/assests/images/products/107.jpg'
+import { designImage } from "@/constants/imagePath";
 
 const Design = () => {
   return (

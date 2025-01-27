@@ -1,5 +1,5 @@
 import Capablitycontent from "./Capablitycontent"
-import weldImage from '/public/assests/images/products/110.jpg'
+import { weldImage } from "@/constants/imagePath";
 
 const Weld = () => {
   return (

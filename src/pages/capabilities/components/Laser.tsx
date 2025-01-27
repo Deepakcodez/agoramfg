@@ -1,5 +1,5 @@
 import Capablitycontent from './Capablitycontent'
-import laserImage from '/public/assests/images/products/109.jpg'
+import { laserImage } from '@/constants/imagePath';
 
 const Laser = () => {
   return (

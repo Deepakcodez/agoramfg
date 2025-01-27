@@ -1,5 +1,5 @@
 import Capablitycontent from "./Capablitycontent"
-import formImage from '/public/assests/images/products/108.jpg'
+import { formImage } from "@/constants/imagePath";
 
 const Form = () => {
   return (
