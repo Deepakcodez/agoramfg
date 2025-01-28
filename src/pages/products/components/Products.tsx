@@ -21,7 +21,7 @@ const Products: React.FC<{ selectedCategoryId: number }> = ({
                 key={`PRODUCT_${selectedCategory.id}_${product.id}`}
                 className="relative group"
               >
-                <div className="h-56 md:h-64 lg:h-72 overflow-hidden rounded-lg relative">
+                <div className="h-56 md:h-64 lg:h-48 overflow-hidden rounded-lg relative">
                   <div className="bg-black/50 rounded-lg absolute inset-0 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <img
                     src={product.image}

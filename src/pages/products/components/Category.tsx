@@ -22,7 +22,7 @@ const Category: React.FC<{ onSelectCategory: (id: number) => void }> = ({
       {categories.map((category) => (
         <div
           className={`w-[11rem] h-[9rem] p-2 flex flex-col items-center justify-start gap-2 cursor-pointer ${
-            selectedCategoryId === category.id ? "bg-blue-100 border border-blue-500" : ""
+            selectedCategoryId === category.id ? " border border-blue-500" : ""
           }`}
           key={category.id}
           onClick={() => handleCategoryClick(category.id)}
