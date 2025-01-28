@@ -3,9 +3,10 @@ import {
   Career,
   Contact,
   Home,
-  Products,
+  
 } from "@/pages";
 import { Assembly, Capabilitylayout, Design, Form, Laser, Paint, Ship, Weld } from "@/pages/capabilities";
+import Products from "@/pages/products/Products.tsx"
 import React from "react";
 
 interface RoutDocument {
