@@ -1,4 +1,4 @@
-import { control1, largehousing1, load1, misc1, multidoor1, racks1, singleDoor1, small1, transformer1 } from "@/constants/imagePath";
+import {  controlconsole1, largehousing1, load1, misc1, multidoor1, racks1, singleDoor1, small1, transformer1 } from "@/constants/imagePath";
 import React, { useRef } from "react";
 
 import { GoTriangleLeft, GoTriangleRight } from "react-icons/go";
@@ -20,40 +20,40 @@ const OurProducts: React.FC = () => {
 
   const imgesData = [
     {
-      image: control1,
-      title: "Automotive Industry",
+      image: controlconsole1,
+      title: "Control Console",
     },
     {
       image: largehousing1,
-      title: "Footwear Industry",
+      title: "Large Housing",
     },
     {
       image: load1,
-      title: "Luggage Industry",
+      title: "Load Banks",
     },
     {
       image: misc1,
-      title: "Stationary Industry",
+      title: "Misc. Parts",
     },
     {
       image: multidoor1,
-      title: "Furnishing/ Decoration Industry",
+      title: "Multi Door Enclosures",
     },
     {
       image: racks1,
-      title: "Sports Goods Industry",
+      title: "19'' & 24'' Racks",
     },
     {
       image: singleDoor1,
-      title: "Garment Industry",
+      title: "Single Door Enclosures ",
     },
     {
       image: small1,
-      title: "Upholstery Industry",
+      title: "Small Boxes & Wallmounts",
     },
     {
       image: transformer1,
-      title: "Upholstery Industry",
+      title: "Transformer Housings",
     },
   ];
 
