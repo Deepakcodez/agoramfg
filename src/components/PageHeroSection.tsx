@@ -1,15 +1,13 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
-// import "swiper/css";
-// import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
 
 interface PageHeroSectionProps {
   title: string;
+  children: React.ReactNode; // Add children prop to accept Header
 }
 
-const PageHeroSection: React.FC<PageHeroSectionProps> = ({ title }) => {
+const PageHeroSection: React.FC<PageHeroSectionProps> = ({ title, children }) => {
   return (
     <Swiper
       direction={"vertical"}
@@ -21,12 +19,19 @@ const PageHeroSection: React.FC<PageHeroSectionProps> = ({ title }) => {
         disableOnInteraction: false, // Continue autoplay after user interaction
       }}
       modules={[Pagination, Autoplay]} // Add Autoplay module
-      className=" h-[12rem] md:h-[32rem] relative overflow-hidden"
+      className="h-[12rem] md:h-[32rem] relative overflow-hidden"
     >
+      {/* Title positioning */}
       <h1 className="text-white md:text-[5vw] text-2xl z-10 font-bold motion-preset-focus absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-jakarta">
         {title}
       </h1>
 
+      {/* Center the Header below the title */}
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 mt-12 z-20">
+        {children} {/* Render Header passed from Capabilitylayout */}
+      </div>
+
+      {/* Swiper slides */}
       <SwiperSlide className="relative">
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-10" />
         <img
