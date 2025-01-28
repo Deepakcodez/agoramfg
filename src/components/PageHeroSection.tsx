@@ -30,7 +30,7 @@ const PageHeroSection: React.FC<PageHeroSectionProps> = ({ title }) => {
       <SwiperSlide className="relative">
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-10" />
         <img
-          src="https://www.leatherfairind.com/assets/images/tennery.png"
+          src="https://metaltech.us/wp-content/uploads/2021/10/GettyImages-491842959-1024x664.jpg"
           alt="image"
           className="h-full w-full object-cover"
         />
@@ -38,7 +38,7 @@ const PageHeroSection: React.FC<PageHeroSectionProps> = ({ title }) => {
       <SwiperSlide className="relative">
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-10" />
         <img
-          src="https://vonbaer.com/cdn/shop/articles/pu-leather-vs-faux-leather.jpg?v=1687801109"
+          src="https://www.bassettmechanical.com/wp-content/uploads/2023/08/Welding-Pressure-Vessel-Manufacturing-Facility-1024x623.jpg"
           alt="image"
           className="h-full w-full object-cover"
         />
@@ -46,7 +46,7 @@ const PageHeroSection: React.FC<PageHeroSectionProps> = ({ title }) => {
       <SwiperSlide className="relative">
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-10" />
         <img
-          src="https://mahileather.com/cdn/shop/articles/IMG_6502_d96e39f7-7782-4296-a001-2291336ebb98.jpg?v=1554988015"
+          src="https://kellogg.edu/wp-content/uploads/2022/03/Welding-Lab.jpg"
           alt="image"
           className="h-full w-full object-cover"
         />
@@ -54,7 +54,7 @@ const PageHeroSection: React.FC<PageHeroSectionProps> = ({ title }) => {
       <SwiperSlide className="relative">
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-10" />
         <img
-          src="https://media.istockphoto.com/id/1317599209/photo/a-young-apprentice-in-a-boot-workshop-prepares-leather-for-further-use-on-a-large-table.jpg?s=612x612&w=0&k=20&c=62S8AgwWKv5nbVVA93W_VkB4fcQfYEPA68xNycVc_d0="
+          src="https://skillpointe.com/sites/default/files/styles/max_1300x1300/public/2020-08/Welder.jpg.webp?itok=5aI7iah5"
           alt="image"
           className="h-full w-full object-cover"
         />

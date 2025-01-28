@@ -8,7 +8,7 @@ const AboutContentSection: React.FC = () => {
         Leather Cloth Since 1995.
       </h1>
 
-      <div className="text-gray-500 lg:text-xl text-sm ">
+      <div className="text-gray-500 lg:text-lg text-sm ">
         <h1 className="mb-5">
           Leo Vinyls, established in 1995, is a leading manufacturer, exporter,
           and supplier of premium PVC Leather Cloth, also known as synthetic or
