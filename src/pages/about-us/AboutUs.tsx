@@ -2,6 +2,7 @@ import React from "react";
 import { AboutMain } from "./components";
 import { motion, useScroll, useTransform } from "motion/react"; 
 import PageHeroSection from "@/components/PageHeroSection";
+import { Footer } from "../Home/components";
 
 const Aboutus: React.FC = () => {
   const { scrollYProgress } = useScroll();
@@ -22,7 +23,7 @@ const Aboutus: React.FC = () => {
           <AboutMain />
         </motion.div>
       </div>
-      
+      <Footer />
     </div>
   );
 };

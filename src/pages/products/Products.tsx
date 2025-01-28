@@ -2,6 +2,7 @@ import React from "react";
 import ProductAndCategory from "./components/ProductAndCategory";
 import PageHeroSection from "@/components/PageHeroSection";
 import { motion, useScroll, useTransform } from "motion/react"; // Ensure you're using "framer-motion"
+import { Footer } from "../Home/components";
 
 const Products: React.FC = () => {
   const { scrollYProgress } = useScroll();
@@ -23,6 +24,7 @@ const Products: React.FC = () => {
           <ProductAndCategory />
         </motion.div>
       </div>
+      <Footer />
     </div>
   );
 };
