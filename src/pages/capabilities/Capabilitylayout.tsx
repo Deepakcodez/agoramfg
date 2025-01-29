@@ -4,6 +4,7 @@ import PageHeroSection from "@/components/PageHeroSection";
 import { Footer } from "../Home/components";
 import Header from "./components/Header";
 import Assembly from "./components/Assembly";
+import { WideScreenhandler } from "@/components";
 
 const Capabilitylayout: React.FC = () => {
   return (
@@ -14,11 +15,12 @@ const Capabilitylayout: React.FC = () => {
           <Header />
         </PageHeroSection>
       </div>
-
-      <div className="relative bg-white md:mx-12 mx-2">
-        {/* Apply the parallax effect to the container */}
-        <Assembly />
-      </div>
+      <WideScreenhandler>
+        <div className="relative bg-white md:mx-12 mx-2">
+          {/* Apply the parallax effect to the container */}
+          <Assembly />
+        </div>
+      </WideScreenhandler>
       <Footer />
     </div>
   );

@@ -3,45 +3,31 @@ const AboutContentSection: React.FC = () => {
   return (
     <div className="w-full flex flex-col gap-7 lg:ps-12 ">
       <h1 className="text-blue-950 font-bold lg:text-[2.4vw] text-3xl lg:leading-[3rem]">
-      Pioneering Excellence in PVC 
+        Agora MFG Inc.
         <br />
-        Leather Cloth Since 1995.
+        Manufacturing Since 1982.
       </h1>
 
       <div className="text-gray-500 lg:text-lg text-sm ">
         <h1 className="mb-5">
-          Leo Vinyls, established in 1995, is a leading manufacturer, exporter,
-          and supplier of premium PVC Leather Cloth, also known as synthetic or
-          artificial leather. With an annual turnover of approximately 30 crores
-          and two dedicated PVC units, we specialize in producing high-quality
-          vinyl that combines elegance, durability, and a leather-like
-          appearance. Our products are widely used across industries, including
-          sports (soccer balls, gloves), automotive (car upholstery), consumer
-          goods (bags, belts, sofa sets), footwear, and furnishings, offering
-          versatile and stylish solutions.
-        </h1>
-        <h1>
-          {"  "}
-          Known for their wear resistance and consistency, our PVC leather
-          products cater to diverse applications, ensuring customer
-          satisfaction. From sports equipment like rugby balls and boxing gloves
-          to stylish car seat covers and carry bags, our vinyl adds a touch of
-          class and functionality. At Leo Vinyls, we continue to lead the
-          industry by delivering durable, high-grade synthetic leather that
-          meets the demands of modern design and utility.
+          Agora Manufacturing has been a leading steel fabricator and
+          manufacturer of quality electrical enclosures since 1982. We are proud
+          to serve numerous industries including electrical and electronic,
+          nuclear, marine, entertainment, and more. Our portfolio of past
+          projects is vast. From control cabinets and large transformer
+          housings, to racks, consoles, multi-door enclosures and switch gears,
+          we have the skills and experience necessary to take on any project. We
+          work with a complete range of materials to meet all of your needs, and
+          this includes carbon steel, galvanized steel, stainless steel and
+          aluminum. <br /> At Agora, our customers always come first. We have at
+          our disposal the most experienced technical team who provide precision
+          manufacturing and excellent service. We have the highest quality
+          standards, and promise unlimited flexibility and long-term
+          reliability. We are driven by professionalism, the desire for
+          challenge, and the need to produce our best quality work for each and
+          every customer. We genuinely enjoy what we do.
         </h1>
       </div>
-{/* 
-      <div className="py-4 border-b w-fit  border-gray-800/20">
-        <h1 className="text-blue-950 text-xl  md:text-3xl">Annette Black</h1>
-        <p className="text-gray-500 text-sm md:text-xl mt-2">
-          CEO & Founder of Manit
-        </p>
-      </div>
-
-      <div>
-        <img src={signature} alt="Signature" />
-      </div> */}
     </div>
   );
 };

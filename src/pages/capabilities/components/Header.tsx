@@ -13,17 +13,17 @@ const Header = () => {
     ];
 
     return (
-        <div className="pt-[5rem] pb-5 w-full flex overflow-x-auto space-x-4 items-center">
+        <div className="md:pt-[5rem] pt-4 pb-5 px-4 w-fit flex overflow-x-auto md:space-x-4 space-x-2 items-center">
             {HeaderMenu.map((item, index) => (
                 <button
                     key={`HEADER_KEYS_${index}`}
-                    className={`flex justify-center items-center h-full backdrop-blur-md border hover:bg-gray-50 border-gray-300 rounded-full px-6 py-2 transition-all duration-300 transform ${
+                    className={`flex justify-center items-center h-full backdrop-blur-md border hover:bg-gray-50 border-gray-300 rounded-full px-2 md:px-6 py-1 md:py-2  transition-all duration-300 transform ${
                         location.pathname.includes(item.link)
                             ? ' shadow-md scale-105'
                             : 'scale-100'
                     }`}
                 >
-                    <Link to={item.link} className="text-sm font-medium text-white hover:text-black">
+                    <Link to={item.link} className="text-xs md:text-sm font-medium text-white hover:text-black">
                         {item.name}
                     </Link>
                 </button>

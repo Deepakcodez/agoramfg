@@ -10,7 +10,9 @@ const Category: React.FC<{ onSelectCategory: (id: number) => void }> = ({
     image: category.products[0]?.image || "https://via.placeholder.com/150",
   }));
 
-  const [selectedCategoryId, setSelectedCategoryId] = useState<number>(categories[0].id);
+  const [selectedCategoryId, setSelectedCategoryId] = useState<number>(
+    categories[0].id
+  );
 
   const handleCategoryClick = (id: number) => {
     setSelectedCategoryId(id);
@@ -18,12 +20,10 @@ const Category: React.FC<{ onSelectCategory: (id: number) => void }> = ({
   };
 
   return (
-    <div className="w-full py-4 flex items-center overflow-x-scroll scrollbar-hide border-l-4">
+    <div className="w-full py-4 flex items-center overflow-x-scroll scrollbar-hide md:border-l-4">
       {categories.map((category) => (
         <div
-          className={`w-[11rem] h-[9rem] p-2 flex flex-col items-center justify-start gap-2 cursor-pointer ${
-            selectedCategoryId === category.id ? " border border-blue-500" : ""
-          }`}
+          className={`w-[11rem] h-[9rem] p-2 flex flex-col items-center justify-start gap-2 cursor-pointer `}
           key={category.id}
           onClick={() => handleCategoryClick(category.id)}
         >
@@ -36,7 +36,9 @@ const Category: React.FC<{ onSelectCategory: (id: number) => void }> = ({
           </div>
           <p
             className={`text-center text-xs sm:text-sm font-semibold ${
-              selectedCategoryId === category.id ? "text-blue-600" : "text-gray-700"
+              selectedCategoryId === category.id
+                ? "text-blue-600"
+                : "text-gray-700"
             }`}
           >
             {category.name}
