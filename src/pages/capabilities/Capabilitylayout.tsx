@@ -1,31 +1,27 @@
-import { Outlet, useLocation, useNavigate } from "react-router-dom"
-import Header from "./components/Header"
-import { PaddingWrapper } from "@/components"
-import { Footer } from "../Home/components"
-import React from "react"
+import React from "react";
 
-const Capabilitylayout = () => {
-    const { pathname } = useLocation()
-    const navigate = useNavigate();
+import PageHeroSection from "@/components/PageHeroSection";
+import { Footer } from "../Home/components";
+import Header from "./components/Header";
+import Assembly from "./components/Assembly";
 
-    React.useEffect(()=>{
-        if(pathname === '/capabilities/'){
-            navigate('/capabilities/assembly')
-        }
-    },[pathname, navigate])
+const Capabilitylayout: React.FC = () => {
+  return (
+    <div>
+      <div className="relative">
+        {/* Pass Header inside PageHeroSection */}
+        <PageHeroSection title={"CAPABILITIES"}>
+          <Header />
+        </PageHeroSection>
+      </div>
 
-    return (
-        <>
-            <PaddingWrapper>
-                <div className=" w-full min-h-screen h-auto">
-                    <Header />
-                    <Outlet />
-                </div>
-            </PaddingWrapper>
-            <Footer />
-        </>
+      <div className="relative bg-white md:mx-12 mx-2">
+        {/* Apply the parallax effect to the container */}
+        <Assembly />
+      </div>
+      <Footer />
+    </div>
+  );
+};
 
-
-    )
-}
-export default Capabilitylayout
+export default Capabilitylayout;
