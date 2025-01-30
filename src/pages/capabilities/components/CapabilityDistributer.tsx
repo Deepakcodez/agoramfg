@@ -15,7 +15,7 @@ const CapabilityDistributer: React.FC<capabilitiesProps> = ({ name }) => {
     return (
       <div>
         <Assembly />
-      </div>
+      </div>    
     );
   }
   if (name.toLowerCase() === "design") {

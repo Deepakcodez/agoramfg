@@ -3,6 +3,7 @@ import { AboutMain } from "./components";
 import { motion, useScroll, useTransform } from "motion/react"; 
 import PageHeroSection from "@/components/PageHeroSection";
 import { Footer } from "../Home/components";
+import { WideScreenhandler } from "@/components";
 
 const Aboutus: React.FC = () => {
   const { scrollYProgress } = useScroll();
@@ -10,7 +11,7 @@ const Aboutus: React.FC = () => {
   // Transform the scroll progress into a y-axis movement
   const y = useTransform(scrollYProgress, [0, 1], [-50, -300]);
   return (
-    <div>
+    <WideScreenhandler>
       <div className="h-fit">
         <PageHeroSection title={"ABOUT US"} />
       </div>
@@ -24,7 +25,7 @@ const Aboutus: React.FC = () => {
         </motion.div>
       </div>
       <Footer />
-    </div>
+    </WideScreenhandler>
   );
 };
 

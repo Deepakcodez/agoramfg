@@ -10,7 +10,7 @@ const Capabilitylayout: React.FC = () => {
   const [selectedCapability, setSelectedCapability] =
     React.useState<string>("assembly");
   return (
-    <div>
+    <WideScreenhandler>
       <div className="relative">
         {/* Pass Header inside PageHeroSection */}
         <PageHeroSection title={"CAPABILITIES"}>
@@ -24,7 +24,7 @@ const Capabilitylayout: React.FC = () => {
         </div>
       </WideScreenhandler>
       <Footer />
-    </div>
+    </WideScreenhandler>
   );
 };
 

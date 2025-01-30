@@ -22,7 +22,7 @@ const PageHeroSection: React.FC<PageHeroSectionProps> = ({ title, children }) =>
       className="h-[12rem] md:h-[22rem] relative overflow-hidden"
     >
       {/* Title positioning */}
-      <h1 className="text-white md:text-[5vw] text-2xl z-10 font-bold motion-preset-focus absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-jakarta">
+      <h1 className="text-white md:text-[5vw] xl:text-[5rem] text-2xl z-10 font-bold motion-preset-focus absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-jakarta">
         {title}
       </h1>
 

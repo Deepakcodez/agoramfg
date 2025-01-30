@@ -3,6 +3,7 @@ import ProductAndCategory from "./components/ProductAndCategory";
 import PageHeroSection from "@/components/PageHeroSection";
 import { motion, useScroll, useTransform } from "motion/react"; // Ensure you're using "framer-motion"
 import { Footer } from "../Home/components";
+import { WideScreenhandler } from "@/components";
 
 const Products: React.FC = () => {
   const { scrollYProgress } = useScroll();
@@ -11,7 +12,7 @@ const Products: React.FC = () => {
   const y = useTransform(scrollYProgress, [0, 1], [-50, -300]);
 
   return (
-    <div>
+    <WideScreenhandler>
       <div className="h-fit">
         <PageHeroSection title={"PRODUCTS"} />
       </div>
@@ -25,7 +26,7 @@ const Products: React.FC = () => {
         </motion.div>
       </div>
       <Footer />
-    </div>
+    </WideScreenhandler>
   );
 };
 
