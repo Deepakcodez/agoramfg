@@ -48,8 +48,8 @@ import multidoor16 from "../assets/images/products/multidoor/multidoor16.jpg";
 import multidoor17 from "../assets/images/products/multidoor/multidoor17.jpg";
 import multidoor18 from "../assets/images/products/multidoor/multidoor18.jpg";
 import multidoor19 from "../assets/images/products/multidoor/multidoor19.jpg";
+
 import multidoorExtra1 from "../assets/images/products/multidoor/mutlidoorExtra1.png";
-import multidoorExtra2 from "../assets/images/products/multidoor/multidoorExtra2.png";
 
 import racks1 from "../assets/images/products/racks/rack1.png";
 import racks2 from "../assets/images/products/racks/rack2.jpg";

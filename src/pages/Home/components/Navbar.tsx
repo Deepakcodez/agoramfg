@@ -5,11 +5,11 @@ import { navlinks } from "@/data";
 import { NavlinksTypes } from "@/types/navlinks.types";
 import { cn } from "@/utils";
 import { FiMenu, FiX } from "react-icons/fi";
-import Mobilenavlinks from "./Mobilenavlinks";
+// import Mobilenavlinks from "./Mobilenavlinks";
 import useNavbarStore from "@/store/NavbarStore";
 const Navbar: React.FC = () => {
   const location = useLocation();
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, ] = useState(false);
   const { openNavbar } = useNavbarStore();
 
   return (
