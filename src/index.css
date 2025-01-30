@@ -36,3 +36,7 @@
 .infinite-scroll:hover {
   animation-play-state: paused; /* Pause on hover */
 }
+
+.no-scroll {
+  overflow: hidden;
+}

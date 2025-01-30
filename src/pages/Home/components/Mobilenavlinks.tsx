@@ -1,43 +1,39 @@
-import { navlinks } from "@/data";
-import { NavlinksTypes } from "@/types";
-import { cn } from "@/utils";
-import { AnimatePresence, motion } from "framer-motion"
 import React from "react";
-import { Link } from "react-router-dom"
+import { RxCross2 } from "react-icons/rx";
+// import { Link } from "react-router-dom";
+import NavbarMobileMenu from "./NavbarMobileMenu";
+import useNavbarStore from "@/store/NavbarStore";
+import { logo } from "@/constants/imagePath";
 
+const NavbarMobile: React.FC = () => {
+  const { closeNavbar } = useNavbarStore();
 
-interface MobilenavlinksProps {
-    menuOpen: boolean;
-    setMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
-}
+  return (
+    <div className="h-[100vh] w-full bg-black/50 absolute  block md:hidden z-[99999999]">
+      <div className="relative  bg-white  h-full w-[15rem] motion-translate-x-in-[-99%] motion-translate-y-in-[0%] motion-duration-[1.00s]/translate border-r-OMblue border-r-2">
+        {/* cancel button */}
+        <div
+          onClick={closeNavbar}
+          className="absolute top-12 -right-5  h-10 w-10 bg-OMblue rounded-full  flex justify-center items-center border bg-white"
+        >
+          <RxCross2 color="blue" size={20} />
+        </div>
+        {/* cancel button */}
 
-const Mobilenavlinks: React.FC<MobilenavlinksProps> = ({ menuOpen, setMenuOpen }) => {
-    return (
-        <AnimatePresence>
-            {menuOpen && (
-                <motion.ul
-                    className=" top-full left-0  absolute z-[49] flex flex-col gap-4 md:hidden bg-white shadow-lg p-8 w-full"
-                    initial={{ y: "-100%", opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    exit={{ y: "-100%", opacity: 0 }}
-                    transition={{ type: "spring", stiffness: 300, damping: 25 }}
-                >
-                    {navlinks.map((navlink: NavlinksTypes, index: number) => (
-                        <li key={`NAVLINKS_MOBILE_${index}`}>
-                            <Link
-                                to={navlink.link}
-                                className={cn("block text-lg font-medium", {
-                                    "border-b-2 border-A-red": location.pathname === navlink.link,
-                                })}
-                                onClick={() => setMenuOpen(!menuOpen)}
-                            >
-                                {navlink.title}
-                            </Link>
-                        </li>
-                    ))}
-                </motion.ul>
-            )}
-        </AnimatePresence>
-    )
-}
-export default Mobilenavlinks
+        {/* logo start */}
+        <div className="bg-OMlightBlue py-8 flex justify-center">
+          {/* <Link to={'/'}> */}
+          <img src={logo} alt="Logo" className="h-12 " />
+          {/* </Link> */}
+        </div>
+        {/* logo end */}
+
+        {/* menu start */}
+        <NavbarMobileMenu />
+        {/* menu end */}
+      </div>
+    </div>
+  );
+};
+
+export default NavbarMobile;

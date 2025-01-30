@@ -2,7 +2,7 @@ const CareersSidebar = () => {
   return (
     <div className="flex md:flex-row flex-col bg-gray-100 min-h-screen">
       <div className="flex flex-col justify-center bg-blue-900 p-8 w-full md:w-1/3 text-white  md:text-lg text-sm">
-        <h3 className="mt-20 font-semibold text-xl">Contact Us</h3>
+        <h3 className="mt-20 font-semibold text-xl ">Contact Us</h3>
         <p className="mt-4">7770 Tranmere Drive</p>
         <p>Mississauga, Ontario L5S 1L9, Canada</p>
         <p className="mt-4">Phone: (905) 362-1700</p>

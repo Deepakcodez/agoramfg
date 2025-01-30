@@ -6,10 +6,11 @@ import { NavlinksTypes } from "@/types/navlinks.types";
 import { cn } from "@/utils";
 import { FiMenu, FiX } from "react-icons/fi";
 import Mobilenavlinks from "./Mobilenavlinks";
+import useNavbarStore from "@/store/NavbarStore";
 const Navbar: React.FC = () => {
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
-
+  const { openNavbar } = useNavbarStore();
 
   return (
 
@@ -48,7 +49,7 @@ const Navbar: React.FC = () => {
         {/* Menu Button */}
         <button
           className="md:hidden text-2xl "
-          onClick={() => setMenuOpen(!menuOpen)}
+          onClick={openNavbar}
           aria-label="Toggle menu"
         >
           {menuOpen ? <FiX /> : <FiMenu />}
@@ -56,7 +57,7 @@ const Navbar: React.FC = () => {
 
         {/* Mobile Navlinks (Wraps the menu to manage entrance and exit animations dynamically, only rendering when menuOpen is true.) */}
 
-        <Mobilenavlinks menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        {/* <Mobilenavlinks  /> */}
       </div>
 
     </div>

@@ -4,6 +4,8 @@ import controlconsole3 from "../assets/images/products/controlconsole/controlcon
 import controlconsole4 from "../assets/images/products/controlconsole/controlconsole4.jpg";
 import controlconsole5 from "../assets/images/products/controlconsole/controlconsole5.jpg";
 import controlconsole6 from "../assets/images/products/controlconsole/controlconsole6.jpg";
+import controlconsoleExtra1 from "../assets/images/products/controlconsole/controlconsoleExtra1.png"
+
 
 import largehousing1 from "../assets/images/products/largeHousing/largeHousing.png";
 import largehousing2 from "../assets/images/products/largeHousing/largeHousing2.jpg";
@@ -46,13 +48,16 @@ import multidoor16 from "../assets/images/products/multidoor/multidoor16.jpg";
 import multidoor17 from "../assets/images/products/multidoor/multidoor17.jpg";
 import multidoor18 from "../assets/images/products/multidoor/multidoor18.jpg";
 import multidoor19 from "../assets/images/products/multidoor/multidoor19.jpg";
-
+import multidoorExtra1 from "../assets/images/products/multidoor/mutlidoorExtra1.png";
+import multidoorExtra2 from "../assets/images/products/multidoor/multidoorExtra2.png";
 
 import racks1 from "../assets/images/products/racks/rack1.png";
 import racks2 from "../assets/images/products/racks/rack2.jpg";
 import racks3 from "../assets/images/products/racks/rack3.jpg";
 import racks4 from "../assets/images/products/racks/rack4.jpg";
 import racks5 from "../assets/images/products/racks/rack5.jpg";
+import rackExtra1 from "../assets/images/products/racks/rackExtra1.png"
+
 
 import singleDoor1 from "../assets/images/products/singledoor/singleDoor1.png";
 import singleDoor2 from "../assets/images/products/singledoor/singleDoor2.jpg";
@@ -61,6 +66,7 @@ import singleDoor4 from "../assets/images/products/singledoor/singleDoor4.jpg";
 import singleDoor5 from "../assets/images/products/singledoor/singleDoor5.jpg";
 import singleDoor6 from "../assets/images/products/singledoor/singleDoor6.jpg";
 import singleDoor7 from "../assets/images/products/singledoor/singleDoor7.jpg";
+import singleDoorExtra1 from "../assets/images/products/singledoor/singledoorExtra1.jpg";
 
 
 import small1 from "../assets/images/products/small/small1.png";
@@ -75,12 +81,16 @@ import small9 from "../assets/images/products/small/small9.jpg";
 import small10 from "../assets/images/products/small/small10.jpg";
 import small11 from "../assets/images/products/small/small11.jpg";
 import small12 from "../assets/images/products/small/small12.jpg";
+import smallExtra1 from "../assets/images/products/small/smallExtra1.png";
+
+
 
 import transformer1 from "../assets/images/products/transformers/transformer1.png";
 import transformer2 from "../assets/images/products/transformers/transformer2.jpg";
 import transformer3 from "../assets/images/products/transformers/transformer3.jpg";
 import transformer4 from "../assets/images/products/transformers/transformer4.jpg";
 import transformer5 from "../assets/images/products/transformers/transformer5.jpg";
+import transformerExtra1 from "../assets/images/products/transformers/transformerExtra1.png";
 
 import footerLogo from "../assets/images/footerLogos.webp";
 import menWorking from "../assets/images/cutting.jpg";
@@ -100,6 +110,7 @@ export {
   controlconsole4,
   controlconsole5,
   controlconsole6,
+  controlconsoleExtra1,
 
   largehousing1,
   largehousing2,
@@ -142,12 +153,14 @@ export {
   multidoor17,
   multidoor18,
   multidoor19,
+  multidoorExtra1,
   
   racks1,
   racks2,
   racks3,
   racks4,
   racks5,
+  rackExtra1,
 
   singleDoor1,
   singleDoor2,
@@ -156,6 +169,7 @@ export {
   singleDoor5,
   singleDoor6,
   singleDoor7,
+  singleDoorExtra1,
 
   small1,
   small2,
@@ -169,12 +183,14 @@ export {
   small10,
   small11,
   small12,
+  smallExtra1,
 
   transformer1,
   transformer2,
   transformer3,
   transformer4,
   transformer5,
+  transformerExtra1,
 
   footerLogo,
   menWorking,
