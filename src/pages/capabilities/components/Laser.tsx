@@ -14,9 +14,7 @@ const content = [
   
   "Mild Steel: Up to 0.75\"",
   "Stainless Steel: Up to 0.625\"",
-  "Aluminum: Up to 0.5\"",
-  "Copper: Up to 0.16\"",
-  "Brass: Up to 0.16\""
+  
 ];
   return (
     <CapibilityDesign

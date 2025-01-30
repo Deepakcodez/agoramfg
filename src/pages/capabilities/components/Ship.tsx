@@ -9,7 +9,7 @@ const Ship = () => {
   
     "Our robust logistics network includes a group of trusted and reliable trucking companies with the capability to ship materials not only across Canada, but also into the United States and Mexico. This global reach means that no matter where your business needs to send or receive materials, Agora can ensure it arrives on time, at competitive pricing, and in excellent condition.",
   
-    "At Agora, we go the extra mile to make sure your logistics process is as seamless as possible. Our team works closely with you to determine the best shipping options based on urgency, budget, and destination. We also offer tracking services, allowing you to stay informed about the progress of your shipments every step of the way.",
+    
   
     "Our experience and commitment to customer satisfaction extend to handling delicate or high-value materials. We understand that some shipments require extra care, and our specialized teams ensure that your products are securely packaged and handled with the utmost attention to detail. From small parcels to large-scale deliveries, we have the capabilities to meet all of your shipping needs."
   ];
