@@ -24,7 +24,7 @@ const Capablitycontent: React.FC<CapabilitylayoutProps> = ({
     cont4style
 }) => {
     return (
-        <div className="grid grid-cols-12  pt-14 ">
+        <div className="grid grid-cols-12  py-14 ">
             <div className="md:col-span-6 col-span-12">
                 <div className="md:h-[30vw] h-[70vw] mx-auto md:mx-0 aspect-square rounded-lg relative overflow-hidden group">
                     <div
