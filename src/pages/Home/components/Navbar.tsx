@@ -41,7 +41,7 @@ const Navbar: React.FC = () => {
 
         {/* Contact Button */}
         <Link to="/contact" className="">
-          <button className="bg-A-red shadow-lg shadow-A-red/50 px-4 py-1 border border-red-400 rounded-md font-semibold text-white text-sm">
+          <button className="bg-A-red shadow-lg shadow-A-red/50 px-4 md:py-1 py-2 border border-red-400 rounded-md font-semibold text-white text-sm">
             Contact
           </button>
         </Link>
@@ -52,7 +52,7 @@ const Navbar: React.FC = () => {
           onClick={openNavbar}
           aria-label="Toggle menu"
         >
-          {menuOpen ? <FiX /> : <FiMenu />}
+          {menuOpen ? <FiX /> : <FiMenu size={30} />}
         </button>
 
         {/* Mobile Navlinks (Wraps the menu to manage entrance and exit animations dynamically, only rendering when menuOpen is true.) */}

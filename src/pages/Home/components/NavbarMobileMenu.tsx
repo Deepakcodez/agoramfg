@@ -14,7 +14,7 @@ const {closeNavbar} = useNavbarStore()
     },
     {
       name: "About Us",
-      link: "/about",
+      link: "/about-us",
     },
     {
       name: "Products",
