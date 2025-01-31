@@ -1,6 +1,7 @@
 import { PaddingWrapper } from "@/components";
 import { menWorking } from "@/constants/imagePath";
 import React from "react";
+import { MdArrowOutward } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 const About: React.FC = () => {
@@ -53,8 +54,8 @@ const About: React.FC = () => {
             </p>
 
             <Link to={"/about-us"}>
-              <button className="bg-A-blue hover:bg-A-blue/90 mt-6 px-6 py-2 rounded text-white transition duration-300">
-                Learn more &rarr;
+              <button className="bg-A-blue hover:bg-A-blue/90 mt-6 px-6 py-2 rounded text-white transition duration-300 flex items-center gap-2 ">
+                Learn more <MdArrowOutward/>
               </button>
             </Link>
           </div>

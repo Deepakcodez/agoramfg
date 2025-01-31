@@ -1,5 +1,5 @@
 import React from "react";
-import { HiOutlineArrowRight } from "react-icons/hi";
+import { MdArrowOutward } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 const Title: React.FC = () => {
@@ -20,7 +20,7 @@ const Title: React.FC = () => {
       <Link to={"/products"}>
         <button className="bg-blue-600  flex items-center justify-center gap-2  lg:mx-0 text-white px-12 w-[13rem] rounded-lg py-4 hover:-translate-y-2 duration-500 hover:shadow-lg shadow-blue-400">
           <h1>Explore</h1>
-          <HiOutlineArrowRight />
+          <MdArrowOutward size={20} />
         </button>
       </Link>
     </div>
