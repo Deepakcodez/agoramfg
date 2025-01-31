@@ -31,7 +31,8 @@ const Category: React.FC<{ onSelectCategory: (id: number) => void }> = ({
             <img
               src={category.image}
               alt={category.name}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover bg-gray-50"
+              loading="lazy"
             />
           </div>
           <p
