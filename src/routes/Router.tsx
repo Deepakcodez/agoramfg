@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import {  Route, Routes } from "react-router-dom";
 import { CLIENT_ROUTES } from "./constants";
 import { NotFoundPage } from "@/components";
 import ClientLayout from "@/layout/client/ClientLayout";
@@ -25,17 +25,15 @@ const renderRoutes = (routes: RoutDocument[]) => {
 
 const Router: React.FC = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        {/* Not Found Page */}
-        <Route path="*" element={<NotFoundPage />} />
+    <Routes>
+      {/* Not Found Page */}
+      <Route path="*" element={<NotFoundPage />} />
 
-        {/* Public/Admin Auth Routes */}
-        <Route path="/" element={<ClientLayout />}>
-          {renderRoutes(CLIENT_ROUTES)}
-        </Route>
-      </Routes>
-    </BrowserRouter>
+      {/* Public/Admin Auth Routes */}
+      <Route path="/" element={<ClientLayout />}>
+        {renderRoutes(CLIENT_ROUTES)}
+      </Route>
+    </Routes>
   );
 };
 

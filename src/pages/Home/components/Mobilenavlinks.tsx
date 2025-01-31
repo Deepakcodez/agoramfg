@@ -9,7 +9,7 @@ const NavbarMobile: React.FC = () => {
   const { closeNavbar } = useNavbarStore();
 
   return (
-    <div className="h-[100vh] w-full bg-black/50 absolute  block md:hidden z-[99999999]">
+    <div className="fixed inset-0 bg-black/50 z-[99999999] block md:hidden">
       <div className="relative  bg-white  h-full w-[15rem] motion-translate-x-in-[-99%] motion-translate-y-in-[0%] motion-duration-[1.00s]/translate border-r-OMblue border-r-2">
         {/* cancel button */}
         <div

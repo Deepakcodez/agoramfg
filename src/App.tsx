@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import NavbarMobile from "./pages/Home/components/Mobilenavlinks";
 import { Router } from "./routes";
 import useNavbarStore from "./store/NavbarStore";
-import "./index.css"
+import "./index.css";
 
 function App() {
   const { isOpen } = useNavbarStore();
@@ -21,7 +21,7 @@ function App() {
   }, [isOpen]);
 
   return (
-    <div className="relative hide-scrollbar">
+    <div className={`relative hide-scrollbar ${isOpen && "overflow-hidden"} `}>
       {isOpen && <NavbarMobile />}
       <Router />
     </div>
