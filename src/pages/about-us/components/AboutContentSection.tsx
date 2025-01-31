@@ -2,7 +2,7 @@ import React from "react";
 const AboutContentSection: React.FC = () => {
   return (
     <div className="w-full flex flex-col gap-7 lg:ps-12 ">
-      <h1 className="text-blue-950 font-bold lg:text-[2.4vw] text-3xl lg:leading-[3rem]">
+      <h1 className="text-blue-950 font-bold lg:text-[2.4vw] 3xl:text-5xl text-3xl lg:leading-[3rem]">
         Agora MFG Inc.
         <br />
         Manufacturing Since 1982.

@@ -10,21 +10,23 @@ const Capabilitylayout: React.FC = () => {
   const [selectedCapability, setSelectedCapability] =
     React.useState<string>("assembly");
   return (
-    <WideScreenhandler>
-      <div className="relative">
-        {/* Pass Header inside PageHeroSection */}
-        <PageHeroSection title={"CAPABILITIES"}>
-          <Header setCapability={setSelectedCapability} />
-        </PageHeroSection>
-      </div>
+    <>
       <WideScreenhandler>
-        <div className="relative bg-white md:mx-12 mx-2">
-          {/* Apply the parallax effect to the container */}
-          <CapabilityDistributer name={selectedCapability} />
+        <div className="relative">
+          {/* Pass Header inside PageHeroSection */}
+          <PageHeroSection title={"CAPABILITIES"}>
+            <Header setCapability={setSelectedCapability} />
+          </PageHeroSection>
         </div>
+        <WideScreenhandler>
+          <div className="relative bg-white md:mx-12 mx-2">
+            {/* Apply the parallax effect to the container */}
+            <CapabilityDistributer name={selectedCapability} />
+          </div>
+        </WideScreenhandler>
       </WideScreenhandler>
       <Footer />
-    </WideScreenhandler>
+    </>
   );
 };
 
